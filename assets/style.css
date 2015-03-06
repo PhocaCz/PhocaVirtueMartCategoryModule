@@ -1,0 +1,249 @@
+#pvmc-wrap {
+	padding: 0px;
+	margin: 0px;
+}
+
+#pvmc-menu ul,
+#pvmc-menu li {
+	line-height:21px;
+	text-align:left;
+}
+
+#pvmc-menu {
+	list-style:none;
+	height:43px;
+	margin: 0px;
+}
+
+#pvmc-menu li.level0 {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 4px 10px 4px 10px;
+	margin-right:0px;
+	margin-top:7px;
+	border:none;
+	list-style:none;
+}
+
+#pvmc-menu li.level0.parent:hover {
+	border: 1px solid #ccc;
+	padding: 3px 9px 4px 9px;
+
+	background: #F4F4F4;
+	background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4), to(#EEEEEE));
+
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+	
+	/* reverse - background: #ccc;*/
+}
+
+#pvmc-menu li a {
+	font-size:14px; 
+	color: #000;
+	display:block;
+	outline:0;
+	text-decoration:none;
+}
+
+#pvmc-menu li:hover a {
+	color:#161616;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+#pvmc-menu li .drop {
+	padding-right:21px;
+	background:url("images/drop.png") no-repeat right 8px;
+}
+#pvmc-menu li:hover .drop {
+	background:url("images/drop.png") no-repeat right 8px;
+}
+
+#pvmc-menu ul.pvmc-submenu, 
+.pvmc-submenu {
+	margin:4px auto;
+	float:left;
+	position:absolute;
+	left:-999em;
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:1px solid #ccc;
+	border-top:none;
+	z-index: 100000000000;
+	
+	background:#F4F4F4;
+	background: -moz-linear-gradient(top, #eee, #bbb);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));
+		
+	/* reverse background: -moz-linear-gradient(top, #cccccc, #eee);
+	border:1px solid #ccc;*/
+	
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+
+	-webkit-box-shadow: 3px 3px 4px -3px #111
+	-moz-box-shadow: 3px 3px 4px -3px #111
+	box-shadow: 3px 3px 4px -3px #111;
+	
+	overflow: visible;
+	height: auto;
+	
+	
+}
+
+#pvmc-menu li:hover .pvmc-submenu {
+	left:-1px;
+	top:auto;
+}
+
+#pvmc-menu p, #pvmc-menu h2, #pvmc-menu h3, #pvmc-menu ul li {
+	line-height:21px;
+	font-size:12px;
+	text-align:left;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+#pvmc-menu h2 {
+	font-size:21px;
+	font-weight:400;
+	letter-spacing:-1px;
+	margin:7px 0 14px 0;
+	padding-bottom:14px;
+	border-bottom:1px solid #666666;
+}
+#pvmc-menu h3 {
+	font-size:14px;
+	margin:7px 0 14px 0;
+	padding-bottom:7px;
+	border-bottom:1px solid #888888;
+}
+#pvmc-menu p {
+	line-height:18px;
+	margin:0 0 10px 0;
+}
+
+#pvmc-menu li:hover div a {
+	font-size:12px;
+	color:#015b86;
+}
+#pvmc-menu li:hover div a:hover {
+	color:#029feb;
+}
+
+
+/* Levels */
+/* Levels 1 (2) */
+#pvmc-menu li.level0 ul.level1 li.level1 {
+	list-style-type: none;
+	margin: 7px 0px 10px 0px;
+}
+
+#pvmc-menu li.level0 ul.level1 li.level1 a {
+	background-color:#777;
+	color: #eeeeee;
+	text-shadow: -1px 1px 1px #000;
+	padding:4px 6px 4px 6px;
+
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+	-webkit-box-shadow: inset  1px 1px 3px -1px   #000,  3px 3px 4px -3px #fff;
+	-moz-box-shadow: inset  1px 1px 3px -1px   #000,  3px 3px 4px -3px #fff;
+	box-shadow: inset  1px 1px 3px -1px   #000,  3px 3px 4px -3px #fff;
+	
+	width: auto;
+	display: inline;
+}
+
+/* Level2 (3) */
+#pvmc-menu li.level0 ul.level1 li.level1 ul.level2 {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#pvmc-menu li.level0 ul.level1 li.level1 ul.level2 li.level2 {
+	list-style-type: none;
+	padding: 0px 0px 0px 10px;
+	margin: 3px 0px;
+	line-height: 1;
+	background:url("images/li.png") no-repeat 0px 4px;
+}
+#pvmc-menu li.level0 ul.level1 li.level1 ul.level2 li.level2 a {
+	background: transparent;
+	color: #000;
+	text-shadow: none;
+	font-size: 90%;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+/* Level3 (4) */
+#pvmc-menu li.level0 ul.level1 li.level1 ul.level2 li.level2 ul.level3 {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#pvmc-menu li.level0 ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 {
+	list-style-type: none;
+	padding: 0px 0px 0px 10px;
+	margin: 3px 0px;
+	line-height: 1;
+	background:url("images/li.png") no-repeat 0px 4px;
+}
+#pvmc-menu li.level0 ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 a {
+	background: transparent;
+	color: #000;
+	text-shadow: none;
+	font-size: 90%;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px #fff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+#pvmc-menu .pvmc-submenu-desc {
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #555;
+}
+
+#pvmc-menu .pvmc-submenu-img img {
+	background:#FFFFFF;
+	padding:4px;
+	margin-right: 4px;
+	border:1px solid #777777;
+	margin-top:5px;
+	-moz-box-shadow:0px 0px 5px #666666;
+	-webkit-box-shadow:0px 0px 5px #666666;
+	box-shadow:0px 0px 5px #666666;
+	position: relative;
+	float: left;
+}
+
+#pvmc-menu .child {
+	clear: both;
+}
+
+
+/* Beez templates*/
+/* Uncomment in case your menu will be set in top position of Beez template */
+/*
+#top {	
+	overflow: visible !important;
+}
+*/
+
+#phoca-content1,
+#phoca-content2,
+#phoca-content3  {
+	overflow: visible !important;
+}
